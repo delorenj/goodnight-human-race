@@ -1,24 +1,50 @@
-<script type="importmap">
-  {
-    "imports": {
-      "@google/genai": "https://esm.sh/@google/genai@^0.7.0",
-      "marked": "https://esm.sh/marked@^15.0.7"
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Goodnight, Human Race - Whimsical AI Storytelling</title>
+  <meta name="description" content="An enchanting AI-powered app that explains complex topics through whimsical illustrated stories with a touch of grown-up humor.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="/index.css">
+  <script type="importmap">
+    {
+      "imports": {
+        "@google/genai": "https://esm.sh/@google/genai@^0.7.0",
+        "marked": "https://esm.sh/marked@^15.0.7"
+      }
     }
-  }
-</script>
-<div class="container">
-  <h1>Explain Things with Construction Vehicles</h1>
-  <p>Examples:</p>
-  <ul id="examples">
-    <li>Explain how neural networks work.</li>
-    <li>Explain how The Matrix works.</li>
-    <li>Explain how spaghettification works.</li>
-  </ul>
-  <p>or enter your own prompt:</p>
-  <textarea id="input" placeholder="Enter some prompt and press Enter."></textarea>
-  <div id="output"></div>
-  <div id="error" hidden></div>
-  <div id="slideshow" hidden></div>
-</div>
-<link rel="stylesheet" href="/index.css">
-<script type="module" src="/index.tsx"></script>
+  </script>
+</head>
+<body>
+  <div class="container">
+    <h1>Goodnight, Human Race</h1>
+    
+    <div class="examples-section">
+      <p>Choose your adventure, dear reader...</p>
+      <ul id="examples">
+        <li>Explain how neural networks work using tiny cats who dream in spreadsheets.</li>
+        <li>Explain how The Matrix works through the lens of hamsters running very sophisticated wheels.</li>
+        <li>Explain how spaghettification works with rubber duckies having a very bad day.</li>
+        <li>Explain quantum entanglement using sock pairs that refuse to stay together in the laundry.</li>
+      </ul>
+    </div>
+    
+    <div class="input-section">
+      <p>...or craft your own delightfully absurd prompt:</p>
+      <textarea 
+        id="input" 
+        placeholder="Enter your topic and let the whimsy begin... (Press Enter to start the magic)"
+        aria-label="Enter your story prompt"
+      ></textarea>
+    </div>
+    
+    <div id="output" role="main" aria-live="polite"></div>
+    <div id="error" hidden role="alert" aria-live="assertive"></div>
+    <div id="slideshow" hidden role="region" aria-label="Story slideshow"></div>
+  </div>
+  
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
