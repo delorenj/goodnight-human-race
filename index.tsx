@@ -22,9 +22,10 @@ const slideshow = document.querySelector('#slideshow') as HTMLDivElement;
 const error = document.querySelector('#error') as HTMLDivElement;
 
 const additionalInstructions = `
-Use a fun story about lots of tiny cats as a metaphor.
+Use a fun bedtime story about construction vehicles (like Crane Truck, Cement Mixer, Dump Truck, Bulldozer, and Excavator) as a metaphor, inspired by "Goodnight, Goodnight, Construction Site".
+The vehicles should be working hard during the day and then settling down for bedtime at the end.
 Keep sentences short but conversational, casual, and engaging.
-Generate a cute, minimal illustration for each sentence with black ink on white background.
+Generate a cute, minimal illustration for each sentence with black ink on white background showing the construction vehicles.
 No commentary, just begin your explanation.
 Keep going until you're done.`;
 

@@ -1,8 +1,12 @@
 {
-  "name": "goodnight,-human-race",
+  "name": "goodnight-human-race",
+  "description": "AI-powered storytelling app that explains complex topics through whimsical stories featuring tiny cats",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.1.0",
   "type": "module",
+  "keywords": ["ai", "storytelling", "education", "gemini", "cats", "illustrations"],
+  "author": "",
+  "license": "Apache-2.0",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
